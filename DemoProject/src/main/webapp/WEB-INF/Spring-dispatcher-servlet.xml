@@ -5,12 +5,12 @@
 
 	<bean id="HandlerMapping" class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" />
 	
-    <bean name="/welcome.html" class="com.mithlesh.hellocontroller.HelloController" />
+    <bean name="/welcome.html" class="com.mithlesh.HelloController" />
 		
     <bean id="viewResolver"
     	class="org.springframework.web.servlet.view.InternalResourceViewResolver" >
         <property name="prefix">
-            <value>/WEB-INF/pages/</value>
+            <value>/</value>
         </property>
         <property name="suffix">
             <value>.jsp</value>

@@ -1,7 +1,7 @@
-apply plugin: 'java'
-apply plugin: 'eclipse'
+apply plugin: 'war'
+apply plugin: 'eclipse-wtp'
 
-sourceCompatibility = 1.5
+sourceCompatibility = 1.8
 version = '1.0'
 jar {
     manifest {
@@ -15,7 +15,8 @@ repositories {
 }
 
 dependencies {
-    compile group: 'commons-collections', name: 'commons-collections', version: '3.2'
+	compile group: 'commons-digester', name: 'commons-digester', version: '2.1'
+	compile group: 'commons-collections', name: 'commons-collections', version: '3.2.2'
     compile 'org.springframework:spring-context:4.3.1.RELEASE'
 	compile 'org.springframework:spring-webmvc:4.3.1.RELEASE'
 	compile 'javax.servlet:jstl:1.2'
