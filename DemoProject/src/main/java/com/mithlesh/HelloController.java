@@ -1,20 +1,21 @@
 package com.mithlesh;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 
-import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.mvc.AbstractController;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
-public class HelloController extends AbstractController{
+@Controller
+@RequestMapping("/hello")
+public class HelloController{
+ 
+   @RequestMapping(method = RequestMethod.GET)
 
-	@Override
-	protected ModelAndView handleRequestInternal(HttpServletRequest request,
-		HttpServletResponse response) throws Exception {
+   public String printHello(ModelMap model) {
+      model.addAttribute("message", "Hello World!");
+      System.out.println("Hi");
+      return "hello";
+   }
 
-		ModelAndView model = new ModelAndView("HelloPage");
-		model.addObject("welcomeMessage", "hello world");
-		
-		return model;
-	}
 }

@@ -1,37 +1,17 @@
+apply plugin: 'java'
 apply plugin: 'war'
 apply plugin: 'eclipse-wtp'
 
 sourceCompatibility = 1.8
-version = '1.0'
-jar {
-    manifest {
-        attributes 'Implementation-Title': 'Gradle Quickstart',
-                   'Implementation-Version': version
-    }
-}
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-	compile group: 'commons-digester', name: 'commons-digester', version: '2.1'
-	compile group: 'commons-collections', name: 'commons-collections', version: '3.2.2'
     compile 'org.springframework:spring-context:4.3.1.RELEASE'
 	compile 'org.springframework:spring-webmvc:4.3.1.RELEASE'
 	compile 'javax.servlet:jstl:1.2'
 	compile group: 'javax.servlet', name: 'servlet-api', version: '2.5'
 	
-}
-
-test {
-    systemProperties 'property': 'value'
-}
-
-uploadArchives {
-    repositories {
-       flatDir {
-           dirs 'repos'
-       }
-    }
 }
