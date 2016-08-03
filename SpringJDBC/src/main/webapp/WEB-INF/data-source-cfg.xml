@@ -10,7 +10,7 @@
       <!-- Using JDBC Driver: JTDS -->
       <property name="driverClassName" value="net.sourceforge.jtds.jdbc.Driver" />
       <property name="url"
-          value="jdbc:jtds:sqlserver://localhost:1433/simplehr;instance=SQLEXPRESS;database=SpringDemo" />
+          value="jdbc:jtds:sqlserver://localhost:1433/SpringDemo;instance=SQLEXPRESS" />
       <property name="username" value="sa" />
       <property name="password" value="p@ssw0rd" />
   </bean>
