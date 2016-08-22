@@ -1,0 +1,10 @@
+.metadata/
+**/.gradle/**
+**/.settings/**
+DemoProject/.gradle/
+*/.gradle/**
+DemoProject/.gradle/2.2.1/taskArtifacts/cache.properties.lock
+DemoProject/.gradle/2.2.1/taskArtifacts/fileHashes.bin
+DemoProject/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin
+DemoProject/.gradle/2.2.1/taskArtifacts/outputFileStates.bin
+DemoProject/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin
